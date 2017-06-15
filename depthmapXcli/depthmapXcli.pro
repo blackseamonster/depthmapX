@@ -11,7 +11,9 @@ SOURCES += main.cpp \
     vgaparser.cpp \
     linkparser.cpp \
     performancewriter.cpp \
-    modeparserregistry.cpp
+    modeparserregistry.cpp \
+    visprepparser.cpp \
+    agentparser.cpp
 
 HEADERS += \
     commandlineparser.h \
@@ -25,7 +27,10 @@ HEADERS += \
     performancesink.h \
     imodeparser.h \
     modeparserregistry.h \
-    imodeparserfactory.h
+    imodeparserfactory.h \
+    visprepparser.h \
+    parsingutils.h \
+    agentparser.h
 
 win32:Release:LIBS += -L../genlib/release -L../salalib/release
 win32:Debug:LIBS += -L../genlib/debug -L../salalib/debug
