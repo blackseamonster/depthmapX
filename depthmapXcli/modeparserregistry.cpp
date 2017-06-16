@@ -2,6 +2,8 @@
 #include "linkparser.h"
 #include "vgaparser.h"
 #include "visprepparser.h"
+#include "agentparser.h"
+#include "isovistparser.h"
 
 
 void ModeParserRegistry::populateParsers()
@@ -10,5 +12,7 @@ void ModeParserRegistry::populateParsers()
     REGISTER_PARSER(VgaParser);
     REGISTER_PARSER(LinkParser);
     REGISTER_PARSER(VisPrepParser);
+    REGISTER_PARSER(AgentParser);
+    REGISTER_PARSER(IsovistParser);
     // *********
 }
